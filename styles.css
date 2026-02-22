@@ -211,6 +211,26 @@ body {
     box-shadow: var(--shadow-lg);
 }
 
+.button-white {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: transparent;
+    color: var(--primary-color);
+    text-decoration: none;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    font-weight: 700;
+    margin-top: 1rem;
+    transition: all 0.3s;
+}
+
+.button-white:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
 /* Sports Grid */
 .sports-section {
     background: linear-gradient(180deg, var(--light-bg) 0%, var(--white) 100%);
@@ -295,13 +315,16 @@ body {
 }
 
 .recruitment-box {
-    background: linear-gradient(135deg, var(--accent-color), #f97316);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: var(--white);
     padding: 3rem;
     border-radius: 12px;
     text-align: center;
     margin-top: 4rem;
     box-shadow: var(--shadow-lg);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .recruitment-box h3 {
@@ -309,9 +332,18 @@ body {
     margin-bottom: 1rem;
 }
 
+.recruitment-box .recruitment-images img {
+    width: 90%;
+    max-width: 700px;
+    border-radius: 12px;
+    margin: 1.5rem auto;
+    display: block;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
 .recruitment-box .button {
     background-color: var(--white);
-    color: var(--accent-color);
+    color: var(--primary-color);
     margin-top: 1rem;
 }
 
