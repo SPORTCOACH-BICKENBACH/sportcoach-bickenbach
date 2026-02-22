@@ -5,6 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sport in Bickenbach | Sportcoach</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Custom styles for image galleries without boxes */
+        .image-gallery {
+            max-width: 1200px;
+            margin: 3rem auto;
+        }
+        .image-gallery img {
+            width: 100%;
+            max-width: 800px;
+            margin: 2rem auto;
+            display: block;
+            border: 3px solid #000;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+        .image-gallery h3 {
+            text-align: center;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+        .image-row {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+        }
+        .image-row img {
+            max-width: 45%;
+            margin: 0;
+        }
+        .partners-free {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .partners-free .person-photos {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin: 3rem 0;
+            flex-wrap: wrap;
+        }
+        .partners-free .person-photos img {
+            max-width: 250px;
+            border: 3px solid #000;
+            border-radius: 8px;
+        }
+        .partners-free .logos {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 3rem 0;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .partners-free .logos img {
+            max-width: 200px;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -172,18 +233,23 @@
     <section id="angebote" class="section angebote-section">
         <div class="container">
             <h2>Eigene Angebote</h2>
-            <div class="angebote-grid">
-                <div class="angebot-card">
-                    <h3>⚽ Hallenfußball für Mädchen</h3>
-                    <span class="status-badge active">AKTIV</span>
-                    <p>Vom Herbst bis Frühling spielen Mädchen aus Bickenbach am Wochenende Fußball in der Sporthalle in Bickenbach. Die Altersgruppe liegt bei etwa 10 bis 16 Jahren.</p>
-                    <p><strong>Wir suchen noch Unterstützung!</strong> Wenn du über 18 Jahre alt bist und Interesse hast, melde dich gerne!</p>
+            
+            <div class="image-gallery">
+                <h3>⚽ Hallenfußball für Mädchen - AKTIV</h3>
+                <img src="https://static.wixstatic.com/media/72b7e8_5a29d4e7525e417988a1042063082065~mv2.jpg/v1/fill/w_585,h_435,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/72b7e8_5a29d4e7525e417988a1042063082065~mv2.jpg" alt="Hallenfußball für Mädchen">
+                <p style="max-width: 800px; margin: 1rem auto; text-align: center; line-height: 1.8;">
+                    Vom Herbst bis Frühling spielen Mädchen aus Bickenbach am Wochenende Fußball in der Sporthalle in Bickenbach. In den Ferien spielen wir nicht. Die Altersgruppe liegt hier etwa bei 10 bis 16 Jahren. Melde Dich gerne, wenn Du Interesse hast daran teilzunehmen!
+                </p>
+                <p style="max-width: 800px; margin: 1rem auto; text-align: center; line-height: 1.8;">
+                    <strong>Wir suchen auch noch Unterstützung im Team als ÜbungsleiterIn beim Fußball.</strong> Wir machen die Aufsicht immer zu 2. und wollen uns hier etwas mehr abwechseln, so dass man nicht jedes Wochenende arbeiten muss. Melde Dich gerne, wenn Du daran Interesse hast und über 18 Jahre alt bist. Optimal wäre etwas Fußball-Erfahrung, da wir dann auch "Schiedsrichter" für die Kinder sind.
+                </p>
+
+                <h3 style="margin-top: 4rem;">💃 Kreistanz - AKTIV</h3>
+                <div class="image-row">
+                    <img src="https://static.wixstatic.com/media/72b7e8_c8e518c6d34b43f6871c9af17f7318a7~mv2.png/v1/fill/w_575,h_789,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Flyer%20Marion%20Tanzen.png" alt="Kreistanz Flyer">
+                    <img src="https://static.wixstatic.com/media/72b7e8_e71f0fb8dc09478da18dcb5475658405~mv2.jpg/v1/fill/w_585,h_434,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/kreistanz2.jpg" alt="Hasapikos Tanz">
                 </div>
-                <div class="angebot-card">
-                    <h3>💃 Kreistanz</h3>
-                    <span class="status-badge active">AKTIV</span>
-                    <p>Traditionelle Kreistänze aus verschiedenen Kulturen. Ein wunderbares Angebot für alle Altersgruppen!</p>
-                </div>
+                <p style="max-width: 800px; margin: 1rem auto; text-align: center;">Hasapikos Tanz</p>
             </div>
         </div>
     </section>
@@ -192,62 +258,71 @@
     <section id="events" class="section">
         <div class="container">
             <h2>Events</h2>
-            <p class="section-subtitle">Hier teilen wir Informationen über sportliche Events in Bickenbach und Umgebung.</p>
+            <p class="section-subtitle">Hier teilen wir sportliche Events in Bickenbach und Umgebung.<br>
+            Schreibt uns gerne bei Interesse und vielleicht können wir diese zusammen besuchen!<br>
+            Vergangene Events löschen wir nicht - bei Interesse ist immer noch ein Probetraining bei einem Verein möglich!</p>
             
-            <div class="events-grid">
-                <div class="event-card">
-                    <img src="https://static.wixstatic.com/media/72b7e8_c4a6efe058b344758154c1bb3023d650~mv2.png/v1/fill/w_590,h_292,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/72b7e8_c4a6efe058b344758154c1bb3023d650~mv2.png" alt="Summer in the City" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
-                    <h3>☀️ Summer in the City Bensheim</h3>
-                    <p>Der Beauner Platz verwandelt sich in einen Treffpunkt für Jung & Alt mit Beachfeld, Volleyball, Basketball und Chill-out Bereichen.</p>
-                    <p><em>19. Juni bis 11. August</em></p>
+            <div class="image-gallery">
+                <h3>☀️ Summer in the City Bensheim</h3>
+                <img src="https://static.wixstatic.com/media/72b7e8_c4a6efe058b344758154c1bb3023d650~mv2.png/v1/fill/w_590,h_292,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/72b7e8_c4a6efe058b344758154c1bb3023d650~mv2.png" alt="Summer in the City">
+                <p style="max-width: 800px; margin: 1rem auto; text-align: center;">Das Stadtmarketing Bensheim holt auch in diesem Jahr den Sommer in die Stadt. Unter dem Namen "SUMMER IN THE CITY" verwandelt sich der Beauner Platz vom 19. Juni bis 11. August in einen Treffpunkt für Jung & Alt.</p>
+
+                <h3>🎉 1150 Jahre Bickenbach</h3>
+                <img src="https://static.wixstatic.com/media/72b7e8_514b9c2d919648efa39345bbf774bf14~mv2.jpg/v1/fill/w_398,h_565,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/1150%20Jahre%20Bickenbach_jfif.jpg" alt="1150 Jahre Bickenbach">
+                <p style="max-width: 800px; margin: 1rem auto; text-align: center;">Für Kinder gibt es am Samstag und Sonntag (6. und 7. Juli) viele Angebote wie z.B. Kinderkarussell, Hüpfburg, Bastelecken, Entenangeln, Kistenrutsche, Klettertürme, Glitzer Tattoos und vieles mehr.</p>
+
+                <h3>🏖️ Beachsoccer Turnier</h3>
+                <div class="image-row">
+                    <img src="https://static.wixstatic.com/media/72b7e8_b0e5fe466a6d42fb8abcf2dab4881b8e~mv2.png/v1/fill/w_354,h_277,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Beachsoccer_PNG.png" alt="Beachsoccer">
+                    <img src="https://static.wixstatic.com/media/72b7e8_f7fe69caab4c480b80d73502764be746~mv2.png/v1/fill/w_482,h_277,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/72b7e8_f7fe69caab4c480b80d73502764be746~mv2.png" alt="Beachsoccer Event">
                 </div>
-                <div class="event-card">
-                    <img src="https://static.wixstatic.com/media/72b7e8_514b9c2d919648efa39345bbf774bf14~mv2.jpg/v1/fill/w_398,h_565,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/1150%20Jahre%20Bickenbach_jfif.jpg" alt="1150 Jahre Bickenbach" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
-                    <h3>🎉 1150 Jahre Bickenbach</h3>
-                    <p>Für Kinder gibt es am Samstag und Sonntag (6. und 7. Juli) viele Angebote wie Kinderkarussell, Hüpfburg, Bastelecken, Entenangeln, Kistenrutsche, Klettertürme und vieles mehr.</p>
+                <p style="max-width: 800px; margin: 1rem auto; text-align: center;">Das Beachsoccer Event für Groß und Klein! Die SKG Bickenbach richtet alljährlich ein Beachsoccer Turnier für Jugend, Aktive und AH Mannschaften aus.<br><a href="https://new.skgbickenbach.de/beachsoccer/" target="_blank">Mehr Informationen</a></p>
+
+                <h3>Weitere Sport-Events</h3>
+                <div class="image-row">
+                    <img src="https://static.wixstatic.com/media/72b7e8_83fbdf4cf0a74c2dbbd70f05e4ab7cfd~mv2.jpg/v1/crop/x_0,y_436,w_1080,h_1532/fill/w_250,h_363,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/72b7e8_83fbdf4cf0a74c2dbbd70f05e4ab7cfd~mv2.jpg" alt="Sport Event 1">
+                    <img src="https://static.wixstatic.com/media/72b7e8_cc2e18d03d4d405f8f3950fcbdec3332~mv2.jpg/v1/crop/x_0,y_445,w_1080,h_1510/fill/w_330,h_469,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screenshot_20240504_120721_WhatsApp.jpg" alt="Sport Event 2">
                 </div>
-                <div class="event-card">
-                    <img src="https://static.wixstatic.com/media/72b7e8_b0e5fe466a6d42fb8abcf2dab4881b8e~mv2.png/v1/fill/w_354,h_277,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Beachsoccer_PNG.png" alt="Beachsoccer" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
-                    <h3>🏖️ Beachsoccer Turnier</h3>
-                    <p>Die SKG Bickenbach richtet alljährlich ein Beachsoccer Turnier für Jugend, Aktive und AH Mannschaften aus.</p>
-                    <a href="https://new.skgbickenbach.de/beachsoccer/" target="_blank">Mehr Informationen</a>
-                </div>
-                <div class="event-card">
-                    <img src="https://static.wixstatic.com/media/72b7e8_6e9669de4d4444ff80bd917ca530a6ae~mv2.jpg/v1/fill/w_410,h_584,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fu%C3%9Fball.jpg" alt="Fußball Event" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
-                    <h3>⚽ Fußball Events</h3>
-                    <p>Verschiedene Fußball-Events und Turniere in der Region.</p>
-                </div>
-                <div class="event-card">
-                    <img src="https://static.wixstatic.com/media/72b7e8_cfe262edbbb540a08f19bb7ed74bf8ed~mv2.jpg/v1/crop/x_0,y_4,w_921,h_1637/fill/w_264,h_484,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/tennis_edited.jpg" alt="Tennis Event" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
-                    <h3>🎾 Tennis Events</h3>
-                    <p>Tennis-Veranstaltungen und Turniere.</p>
+                <div class="image-row">
+                    <img src="https://static.wixstatic.com/media/72b7e8_e864a42503554761a09d6c2ac078974b~mv2.jpg/v1/crop/x_16,y_0,w_2045,h_2991/fill/w_356,h_530,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/20240503_200027_edited.jpg" alt="Sport Event 3">
+                    <img src="https://static.wixstatic.com/media/72b7e8_cfe262edbbb540a08f19bb7ed74bf8ed~mv2.jpg/v1/crop/x_0,y_4,w_921,h_1637/fill/w_264,h_484,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/tennis_edited.jpg" alt="Tennis Event">
+                    <img src="https://static.wixstatic.com/media/72b7e8_6e9669de4d4444ff80bd917ca530a6ae~mv2.jpg/v1/fill/w_410,h_584,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fu%C3%9Fball.jpg" alt="Fußball Event">
                 </div>
             </div>
+        </div>
+    </section>
 
-            <h2 style="margin-top: 4rem;">Ausflüge</h2>
+    <!-- Ausflüge Section -->
+    <section class="section" style="background-color: var(--light-bg);">
+        <div class="container">
+            <h2>Ausflüge</h2>
             <p class="section-subtitle">Von uns organisierte sportliche Ausflüge und Aktivitäten.</p>
             
-            <div class="events-grid">
-                <div class="event-card">
-                    <img src="https://static.wixstatic.com/media/72b7e8_895fb477869f41f1a00792d85036a5e1~mv2.jpg/v1/fill/w_590,h_139,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/72b7e8_895fb477869f41f1a00792d85036a5e1~mv2.jpg" alt="Ukrainische Nationalmannschaft" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
-                    <h3>🇺🇦 Ukrainische Fußballnationalmannschaft</h3>
-                    <p>Besuch beim öffentlichen Training der ukrainischen Fußballnationalmannschaft in Wiesbaden.</p>
+            <div class="image-gallery">
+                <h3>🇺🇦 Öffentliches Training der ukrainischen Fußballnationalmannschaft in Wiesbaden</h3>
+                <img src="https://static.wixstatic.com/media/72b7e8_895fb477869f41f1a00792d85036a5e1~mv2.jpg/v1/fill/w_590,h_139,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/72b7e8_895fb477869f41f1a00792d85036a5e1~mv2.jpg" alt="Ukraine Nationalteam Banner">
+                <div class="image-row">
+                    <img src="https://static.wixstatic.com/media/72b7e8_c003218e196e4c5fb79cbc9a07f915d0~mv2.jpg/v1/fill/w_290,h_235,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/72b7e8_c003218e196e4c5fb79cbc9a07f915d0~mv2.jpg" alt="Ukraine Training 1">
+                    <img src="https://static.wixstatic.com/media/72b7e8_ac7ab66ece764b519b3d6fe9abe258b0~mv2.jpg/v1/fill/w_363,h_204,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/72b7e8_ac7ab66ece764b519b3d6fe9abe258b0~mv2.jpg" alt="Ukraine Training 2">
                 </div>
-                <div class="event-card">
-                    <img src="https://static.wixstatic.com/media/72b7e8_4ea18465987c4e37858de77ca7ce0b56~mv2.jpg/v1/fill/w_418,h_590,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/72b7e8_4ea18465987c4e37858de77ca7ce0b56~mv2.jpg" alt="Fußball Turnier Reinheim" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
-                    <h3>⚽ Fußball Turnier Reinheim</h3>
-                    <p>Gemeinsamer Besuch beim Fußballturnier in Reinheim.</p>
+
+                <h3 style="margin-top: 4rem;">⚽ Fußball Turnier Reinheim</h3>
+                <img src="https://static.wixstatic.com/media/72b7e8_4ea18465987c4e37858de77ca7ce0b56~mv2.jpg/v1/fill/w_418,h_590,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/72b7e8_4ea18465987c4e37858de77ca7ce0b56~mv2.jpg" alt="Fußball Turnier Reinheim">
+                <div class="image-row">
+                    <img src="https://static.wixstatic.com/media/72b7e8_197913d3b9ee4ec89e09cc36ef6b589f~mv2.jpeg/v1/fill/w_481,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/72b7e8_197913d3b9ee4ec89e09cc36ef6b589f~mv2.jpeg" alt="Turnier 1">
+                    <img src="https://static.wixstatic.com/media/72b7e8_be801394480f45e3b78e8fe5e44f2f43~mv2.jpeg/v1/fill/w_481,h_330,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/72b7e8_be801394480f45e3b78e8fe5e44f2f43~mv2.jpeg" alt="Turnier 2">
                 </div>
-                <div class="event-card">
-                    <img src="https://static.wixstatic.com/media/72b7e8_7ac2f5f4f121418fb91d5666497d0899~mv2.jpeg/v1/crop/x_0,y_0,w_3494,h_2054/fill/w_575,h_330,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Bowling%20Bensheim.jpeg" alt="Bowling Bensheim" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
-                    <h3>🎳 Bowling Bensheim</h3>
-                    <p>Bowlingausflug nach Bensheim - Spaß und Sport für alle Altersgruppen.</p>
+                <img src="https://static.wixstatic.com/media/72b7e8_8ba4a873ef5543d5813d22eafe4630d8~mv2.jpeg/v1/fill/w_914,h_314,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/72b7e8_8ba4a873ef5543d5813d22eafe4630d8~mv2.jpeg" alt="Turnier Gruppe">
+                <div class="image-row">
+                    <img src="https://static.wixstatic.com/media/72b7e8_6f136c927add4c8aae709cdaec208372~mv2.jpeg/v1/fill/w_331,h_305,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/72b7e8_6f136c927add4c8aae709cdaec208372~mv2.jpeg" alt="Turnier 3">
+                    <img src="https://static.wixstatic.com/media/72b7e8_03d9ec7ca08041c6ad53c5ebe500167a~mv2.jpeg/v1/fill/w_229,h_305,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/72b7e8_03d9ec7ca08041c6ad53c5ebe500167a~mv2.jpeg" alt="Turnier 4">
                 </div>
-                <div class="event-card">
-                    <img src="https://static.wixstatic.com/media/72b7e8_9e2b57dff4f2439a804c0e1f17dd548f~mv2.jpeg/v1/crop/x_0,y_0,w_1658,h_941/fill/w_575,h_318,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Eissporthalle_3.jpeg" alt="Eissporthalle Darmstadt" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
-                    <h3>⛸️ Eissporthalle Darmstadt</h3>
-                    <p>Eislaufen in der Eissporthalle Darmstadt - ein winterliches Vergnügen.</p>
-                </div>
+
+                <h3 style="margin-top: 4rem;">🎳 Bowling Bensheim</h3>
+                <img src="https://static.wixstatic.com/media/72b7e8_7ac2f5f4f121418fb91d5666497d0899~mv2.jpeg/v1/crop/x_0,y_0,w_3494,h_2054/fill/w_575,h_330,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Bowling%20Bensheim.jpeg" alt="Bowling Bensheim">
+
+                <h3 style="margin-top: 4rem;">⛸️ Eissporthalle Darmstadt</h3>
+                <img src="https://static.wixstatic.com/media/72b7e8_9e2b57dff4f2439a804c0e1f17dd548f~mv2.jpeg/v1/crop/x_0,y_0,w_1658,h_941/fill/w_575,h_318,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Eissporthalle_3.jpeg" alt="Eissporthalle Darmstadt">
             </div>
         </div>
     </section>
@@ -256,35 +331,37 @@
     <section class="section partners-section">
         <div class="container">
             <h2>Wir sagen Danke</h2>
-            <div class="partners-grid">
-                <div class="partner">
-                    <img src="https://static.wixstatic.com/media/72b7e8_389f237974624144820da6d30c2189ce~mv2.jpeg/v1/fill/w_372,h_235,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/72b7e8_389f237974624144820da6d30c2189ce~mv2.jpeg" alt="Peter Beuth" style="width: 100%; max-width: 250px; margin-bottom: 1rem;">
-                    <p><strong>Peter Beuth</strong><br>Hessischer Minister des Innern und für Sport</p>
+            
+            <div class="partners-free">
+                <div class="person-photos">
+                    <div>
+                        <img src="https://static.wixstatic.com/media/72b7e8_389f237974624144820da6d30c2189ce~mv2.jpeg/v1/fill/w_372,h_235,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/72b7e8_389f237974624144820da6d30c2189ce~mv2.jpeg" alt="Peter Beuth">
+                        <p style="margin-top: 1rem;"><strong>Peter Beuth</strong><br>Hessischer Minister des Innern und für Sport</p>
+                    </div>
+                    <div>
+                        <img src="https://static.wixstatic.com/media/72b7e8_d9b7e12035f84b2a898d3996ad24d0bb~mv2.jpg/v1/fill/w_105,h_235,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/72b7e8_d9b7e12035f84b2a898d3996ad24d0bb~mv2.jpg" alt="Boris Rhein">
+                        <p style="margin-top: 1rem;"><strong>Boris Rhein</strong><br>Hessischer Ministerpräsident</p>
+                    </div>
+                    <div>
+                        <img src="https://static.wixstatic.com/media/72b7e8_bf295ad92ea94d1d8221c0b50b7dc743~mv2.png/v1/fill/w_236,h_235,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/72b7e8_bf295ad92ea94d1d8221c0b50b7dc743~mv2.png" alt="Markus Hennemann">
+                        <p style="margin-top: 1rem;"><strong>Markus Hennemann</strong><br>Bürgermeister Bickenbach</p>
+                    </div>
                 </div>
-                <div class="partner">
-                    <img src="https://static.wixstatic.com/media/72b7e8_d9b7e12035f84b2a898d3996ad24d0bb~mv2.jpg/v1/fill/w_105,h_235,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/72b7e8_d9b7e12035f84b2a898d3996ad24d0bb~mv2.jpg" alt="Boris Rhein" style="width: 100%; max-width: 150px; margin-bottom: 1rem;">
-                    <p><strong>Boris Rhein</strong><br>Hessischer Ministerpräsident</p>
+
+                <div class="logos">
+                    <img src="https://static.wixstatic.com/media/72b7e8_7950add69eb448c081dfba641d4e1722~mv2.jpg/v1/fill/w_200,h_197,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/72b7e8_7950add69eb448c081dfba641d4e1722~mv2.jpg" alt="Gemeinde Bickenbach">
+                    <img src="https://static.wixstatic.com/media/72b7e8_16569e1d30d24516ab55cfd443728679~mv2.png/v1/fill/w_246,h_197,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/72b7e8_16569e1d30d24516ab55cfd443728679~mv2.png" alt="Sportjugend Hessen">
+                    <img src="https://static.wixstatic.com/media/72b7e8_4eaa8560d54f4681a3f408a50d2cb118~mv2.png/v1/fill/w_225,h_225,al_c,q_85,enc_avif,quality_auto/72b7e8_4eaa8560d54f4681a3f408a50d2cb118~mv2.png" alt="Sport integriert Hessen">
                 </div>
-                <div class="partner">
-                    <img src="https://static.wixstatic.com/media/72b7e8_bf295ad92ea94d1d8221c0b50b7dc743~mv2.png/v1/fill/w_236,h_235,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/72b7e8_bf295ad92ea94d1d8221c0b50b7dc743~mv2.png" alt="Markus Hennemann" style="width: 100%; max-width: 200px; margin-bottom: 1rem;">
-                    <p><strong>Markus Hennemann</strong><br>Bürgermeister Bickenbach</p>
-                </div>
-                <div class="partner">
-                    <img src="https://static.wixstatic.com/media/72b7e8_7950add69eb448c081dfba641d4e1722~mv2.jpg/v1/fill/w_200,h_197,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/72b7e8_7950add69eb448c081dfba641d4e1722~mv2.jpg" alt="Gemeinde Bickenbach Logo" style="width: 100%; max-width: 180px; margin-bottom: 1rem;">
-                </div>
-                <div class="partner">
-                    <img src="https://static.wixstatic.com/media/72b7e8_16569e1d30d24516ab55cfd443728679~mv2.png/v1/fill/w_246,h_197,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/72b7e8_16569e1d30d24516ab55cfd443728679~mv2.png" alt="Sportjugend Hessen Logo" style="width: 100%; max-width: 220px; margin-bottom: 1rem;">
-                </div>
-                <div class="partner">
-                    <img src="https://static.wixstatic.com/media/72b7e8_4eaa8560d54f4681a3f408a50d2cb118~mv2.png/v1/fill/w_225,h_225,al_c,q_85,enc_avif,quality_auto/72b7e8_4eaa8560d54f4681a3f408a50d2cb118~mv2.png" alt="Sport integriert Hessen Logo" style="width: 100%; max-width: 200px; margin-bottom: 1rem;">
-                </div>
-                <div class="partner">
-                    <img src="https://static.wixstatic.com/media/72b7e8_d120dc03d23b4e8192f02025350fc179~mv2.png/v1/fill/w_328,h_66,al_c,q_85,enc_avif,quality_auto/72b7e8_d120dc03d23b4e8192f02025350fc179~mv2.png" alt="Jugendzentrum Logo" style="width: 100%; max-width: 250px; margin-bottom: 1rem;">
-                    <a href="https://www.juze-bickenbach.de/" target="_blank">Jugendzentrum Bickenbach</a>
-                </div>
-                <div class="partner">
-                    <img src="https://static.wixstatic.com/media/72b7e8_cca9203981314a118da8cd9f651e204a~mv2.png/v1/fill/w_266,h_66,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/72b7e8_cca9203981314a118da8cd9f651e204a~mv2.png" alt="Kinderkonsulat Logo" style="width: 100%; max-width: 250px; margin-bottom: 1rem;">
-                    <a href="https://kinderkonsulat.net/" target="_blank">Kinderkonsulat Bickenbach</a>
+                <div class="logos">
+                    <div style="text-align: center;">
+                        <img src="https://static.wixstatic.com/media/72b7e8_d120dc03d23b4e8192f02025350fc179~mv2.png/v1/fill/w_328,h_66,al_c,q_85,enc_avif,quality_auto/72b7e8_d120dc03d23b4e8192f02025350fc179~mv2.png" alt="Jugendzentrum Bickenbach">
+                        <p style="margin-top: 0.5rem;"><a href="https://www.juze-bickenbach.de/" target="_blank">Jugendzentrum Bickenbach</a></p>
+                    </div>
+                    <div style="text-align: center;">
+                        <img src="https://static.wixstatic.com/media/72b7e8_cca9203981314a118da8cd9f651e204a~mv2.png/v1/fill/w_266,h_66,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/72b7e8_cca9203981314a118da8cd9f651e204a~mv2.png" alt="Kinderkonsulat Bickenbach">
+                        <p style="margin-top: 0.5rem;"><a href="https://kinderkonsulat.net/" target="_blank">Kinderkonsulat Bickenbach</a></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -297,7 +374,7 @@
             <div class="contact-content">
                 <div class="contact-info-box">
                     <h3>Stefan Neufeld</h3>
-                    <p>📧 <a href="/cdn-cgi/l/email-protection#bccfccd3cec8dfd3dddfd492ded5dfd7d9d2dedddfd4fcd1ddd5d092d8d9"><span class="__cf_email__" data-cfemail="473437283533242826242f69252e242c22292526242f072a262e2b692322">[email&#160;protected]</span></a></p>
+                    <p>📧 <a href="mailto:sportcoach.bickenbach@mail.de">sportcoach.bickenbach@mail.de</a></p>
                     <p><a href="https://docs.google.com/forms/d/e/1FAIpQLScJoLOp_Y5Pggde_GepTLUedyqHPR2QHUjpT15fS-VurWF46A/viewform" target="_blank" class="button">Formular ausfüllen</a></p>
                 </div>
                 
