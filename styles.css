@@ -129,10 +129,27 @@ body {
 /* Section Styles */
 .section {
     padding: 5rem 0;
+    position: relative;
 }
 
 .section:nth-child(even) {
     background-color: var(--light-bg);
+}
+
+/* Add subtle separator between sections */
+.section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(0,0,0,0.1), transparent);
+}
+
+.section:first-of-type::before {
+    display: none;
 }
 
 .section h2 {
@@ -140,6 +157,7 @@ body {
     margin-bottom: 2rem;
     color: var(--text-dark);
     text-align: center;
+    padding-top: 1rem;
 }
 
 .section-subtitle {
