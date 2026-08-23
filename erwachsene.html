@@ -1,297 +1,302 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sport in Bickenbach | Sportcoach</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        .image-gallery {
-            max-width: 1200px;
-            margin: 3rem auto;
-        }
-        .image-gallery img {
-            width: 100%;
-            max-width: 800px;
-            margin: 2rem auto;
-            display: block;
-            border: 3px solid #000;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-        }
-        .image-gallery h3 {
-            text-align: center;
-            margin-top: 3rem;
-            margin-bottom: 1rem;
-            color: var(--text-dark);
-        }
-        .image-row {
-            display: flex;
-            gap: 2rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin: 2rem 0;
-        }
-        .image-row img {
-            max-width: 45%;
-            margin: 0;
-        }
-        .partners-free {
-            max-width: 1000px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        .partners-free .person-photos {
-            display: flex;
-            justify-content: center;
-            gap: 3rem;
-            margin: 3rem 0;
-            flex-wrap: wrap;
-            max-width: 900px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .partners-free .person-photos img {
-            max-width: 280px;
-            border: 3px solid #000;
-            border-radius: 8px;
-        }
-        .partners-free .logos {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin: 3rem 0;
-            flex-wrap: wrap;
-            align-items: center;
-        }
-        .partners-free .logos img {
-            max-width: 200px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Erwachsene | Sport in Bickenbach</title>
+  <meta name="description" content="Sport in Bickenbach – Informationen, Sportangebote und Unterstützung im Rahmen von Sport integriert Hessen.">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="kinder.html" class="logo">SPORT IN BICKENBACH</a>
-            <div class="nav-links">
-                <a href="kinder.html" class="nav-main">🧒 Kinder</a>
-                <a href="erwachsene.html" class="nav-main" style="color: var(--primary-color); font-weight: bold;">👨‍👩‍👧 Erwachsene</a>
-                <a href="vereine.html" class="nav-main">⚽ Vereine</a>
-                <a href="unterstuetzung.html" class="nav-main">🤝 Unterstützung</a>
-            </div>
+<body data-page="erwachsene">
+
+<nav class="navbar">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">S</span>
+      <span>SPORT IN BICKENBACH</span>
+    </a>
+    <button class="menu-button" type="button" aria-label="Menü öffnen" onclick="document.body.classList.toggle('menu-open')">☰</button>
+    <div class="nav-links">
+      <a href="kinder.html" data-page="kinder">Kinder</a>
+      <a href="erwachsene.html" data-page="erwachsene">Erwachsene</a>
+      <a href="vereine.html" data-page="vereine">Vereine</a>
+      <a href="unterstuetzung.html" data-page="unterstuetzung">Unterstützung</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<section class="page-hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Sport integriert Hessen · Bickenbach</span>
+      <h1>Sport finden. Menschen kennenlernen.</h1>
+      <p class="hero-lead">Ich unterstütze Sie dabei, ein passendes Sportangebot in Bickenbach zu finden.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#sportarten">Sportangebote ansehen</a>
+        <a class="button secondary" href="#kontakt">Kontakt</a>
+      </div>
+    </div>
+    <div class="hero-person">
+      <img src="assets/images/profilbild-stefan.jpeg" alt="Stefan Neufeld">
+      <div>
+        <strong>Stefan Neufeld</strong>
+        <span>Sport-Coach der Gemeinde Bickenbach</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container narrow">
+    <div class="section-heading">
+      <span class="eyebrow">Persönliche Unterstützung</span>
+      <h2>Was macht ein Sport-Coach?</h2>
+    </div>
+    <div class="lead-card">
+      <p>Sport verbindet Menschen – unabhängig von Herkunft oder Sprache. Im Rahmen des Programms <a href="https://familie.hessen.de/sport/integration-und-gewaltpraevention/integration-im-und-durch-sport/sport-integriert-hessen" target="_blank" rel="noopener">„Sport integriert Hessen“</a> unterstütze ich die Gemeinde Bickenbach dabei, Menschen mit Migrationsgeschichte, Geflüchtete und Personen in schwierigen Lebenssituationen an Sportvereine und Bewegungsangebote heranzuführen.</p>
+      <p>Ich begleite beim ersten Kontakt und helfe dabei, den passenden Verein zu finden.</p>
+    </div>
+    <div class="notice-card">
+      <strong>Die Unterstützung ist kostenlos.</strong>
+      <span>Wenn Sie unsicher sind, welches Angebot passt, schreiben Sie mir gerne.</span>
+    </div>
+  </div>
+</section>
+
+<section class="section soft" id="sportarten">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Dauerhafte Angebote</span>
+      <h2>Sportarten in Bickenbach</h2>
+      <p>Eine Übersicht von Vereinen, Gruppen und Sportangeboten in Bickenbach.</p>
+    </div>
+    <div class="sports-grid">
+      
+        <article class="sport-card">
+          <div class="sport-icon">⚽</div>
+          <h3>Fußball</h3>
+          <p>Fußball für verschiedene Altersgruppen.</p>
+          <a href="http://www.skgbickenbach.de/" target="_blank" rel="noopener">SKG Bickenbach →</a>
+        </article>
+
+        <article class="sport-card">
+          <div class="sport-icon">🎾</div>
+          <h3>Tennis</h3>
+          <p>Training auf dem Tennisplatz.</p>
+          <a href="http://www.tc-bickenbach.de/" target="_blank" rel="noopener">TC Bickenbach →</a>
+        </article>
+
+        <article class="sport-card">
+          <div class="sport-icon">🏓</div>
+          <h3>Tischtennis</h3>
+          <p>Schnelles Spiel mit Schläger und Ball.</p>
+          <a href="https://ttennisbickenbach.wixsite.com/skg-bickenbach-tt" target="_blank" rel="noopener">SKG Bickenbach TT →</a>
+        </article>
+
+        <article class="sport-card">
+          <div class="sport-icon">♟️</div>
+          <h3>Schach</h3>
+          <p>Denken, planen und gemeinsam spielen.</p>
+          <a href="http://www.schach-bickenbach.de/" target="_blank" rel="noopener">Schach Bickenbach →</a>
+        </article>
+
+        <article class="sport-card">
+          <div class="sport-icon">🤸</div>
+          <h3>Kinderturnen</h3>
+          <p>Bewegung, Turnen und Spielen für Kinder.</p>
+          <a href="https://www.tv-bickenbach.de/kinderturnen/" target="_blank" rel="noopener">TV Bickenbach →</a>
+        </article>
+
+        <article class="sport-card">
+          <div class="sport-icon">💃</div>
+          <h3>Kindertanzen</h3>
+          <p>Tanzen in der Gruppe.</p>
+          <a href="https://bickenbach-bergstrasse.de/de/vereinsverzeichnis/vereine/SKG-Abt-Kindertanz.php" target="_blank" rel="noopener">SKG Kindertanz →</a>
+        </article>
+
+        <article class="sport-card">
+          <div class="sport-icon">🎯</div>
+          <h3>Schützenverein</h3>
+          <p>Sport mit Konzentration und Präzision.</p>
+          <a href="https://www.swbickenbach.de/startseite.html" target="_blank" rel="noopener">SV Bickenbach →</a>
+        </article>
+
+        <article class="sport-card">
+          <div class="sport-icon">🥾</div>
+          <h3>Wandern</h3>
+          <p>Gemeinsam unterwegs in der Natur.</p>
+          <a href="http://www.wanderfreunde-bickenbach.de/" target="_blank" rel="noopener">Wanderfreunde →</a>
+        </article>
+
+        <article class="sport-card">
+          <div class="sport-icon">🚴</div>
+          <h3>Jump & Pump</h3>
+          <p>Bewegung und Action auf dem Pumptrack.</p>
+          <a href="https://bickenbach-bergstrasse.de/de/vereinsverzeichnis/vereine/SKG-Abt-Jump-amp-Pump.php" target="_blank" rel="noopener">SKG Jump & Pump →</a>
+        </article>
+
+        <article class="sport-card">
+          <div class="sport-icon">🎱</div>
+          <h3>Boule</h3>
+          <p>Ein geselliges Spiel für verschiedene Altersgruppen.</p>
+          <a href="https://www.partnerschaftsverein-bickenbach.de/veranstaltungen/index.php" target="_blank" rel="noopener">Partnerschaftsverein Bickenbach →</a>
+        </article>
+    </div>
+    <div class="sports-meta">
+      <p>Weitere Vereine in der Umgebung finden Sie beim <a href="https://sportkreis-darmstadt-dieburg.de/vereinssuche" target="_blank" rel="noopener">Sportkreis Darmstadt-Dieburg</a>.</p>
+      <div class="notice-card">
+        <strong>Fehlt ein Verein oder eine Sportart?</strong>
+        <span>Melden Sie sich gerne – ich ergänze die Übersicht.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Eigene Angebote</span>
+      <h2>Von uns organisierte Angebote</h2>
+    </div>
+    <div class="offer-grid">
+      <article class="offer-card">
+        <img class="media-contain" src="assets/images/tag-des-madchen-fuball.jpg" alt="Hallenfußball für Mädchen">
+        <div class="offer-copy">
+          <span class="status">AKTIV</span>
+          <h3>⚽ Hallenfußball für Mädchen</h3>
+          <p>Vom Herbst bis Frühling spielen Mädchen aus Bickenbach am Wochenende in der Sporthalle Fußball. Die Altersgruppe liegt ungefähr bei 10 bis 16 Jahren.</p>
+          <p>Wir suchen außerdem gelegentlich Unterstützung als Übungsleiterin oder Übungsleiter. Mindestalter 18 Jahre; Fußball-Erfahrung ist von Vorteil.</p>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section style="padding: 3rem 0; background-color: white;">
-        <div class="container">
-            <h1 style="text-align: center; margin-bottom: 0.5rem;">SPORT IN BICKENBACH</h1>
-            <p style="text-align: center; font-size: 1.3rem; color: var(--primary-color);">Integration durch Bewegung</p>
-            <p style="text-align: center; margin-top: 1rem;"><a href="#about" style="color: var(--primary-color); text-decoration: underline;">Mehr erfahren</a></p>
+      </article>
+      <article class="offer-card">
+        <div class="offer-gallery">
+          <img class="media-contain" src="assets/images/tanzen-q2-website.png" alt="Kreistanz Flyer">
+          <img class="media-contain" src="assets/images/kreistanz2.jpg" alt="Kreistanz">
         </div>
-    </section>
-
-    <!-- Stefan Intro -->
-    <section style="padding: 3rem 0; background-color: white;">
-        <div class="container" style="text-align: center;">
-            <div style="display: inline-block;">
-                <img src="95087.jpg" alt="Stefan Neufeld" style="width: 200px; height: 200px; border-radius: 50%; border: 5px solid var(--primary-color); object-fit: cover;">
-            </div>
-            <h2 style="margin-top: 1.5rem;">Stefan Neufeld</h2>
-            <p style="font-size: 1.2rem; color: var(--primary-color); font-weight: 600;">Sport-Coach der Gemeinde Bickenbach</p>
+        <div class="offer-copy">
+          <span class="status">AKTIV</span>
+          <h3>💃 Kreistanz</h3>
+          <p>Gemeinsames Tanzen in der Gruppe, unter anderem Hasapikos.</p>
         </div>
-    </section>
+      </article>
+    </div>
+  </div>
+</section>
 
-    <!-- Was macht ein Sport-Coach (ERWACHSENE VERSION) -->
-    <section id="about" class="section" style="background-color: white;">
-        <div class="container">
-            <h2>Was macht ein Sport-Coach?</h2>
-            <p style="font-size: 1rem; line-height: 1.8;">
-                Sport verbindet Menschen – unabhängig von Herkunft oder Sprache. Im Rahmen des Programms „Sport integriert Hessen" unterstütze ich die Gemeinde Bickenbach dabei, Menschen mit Migrationsgeschichte, Geflüchtete und Personen in schwierigen Lebenssituationen an Sportvereine und Bewegungsangebote heranzuführen. Ich begleite beim ersten Kontakt und helfe dabei, den passenden Verein zu finden.
-            </p>
+<section class="section soft" id="events">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Aktuelles</span>
+      <h2>Sportliche Events</h2>
+      <p>Aktuell sind keine neuen Termine eingetragen. Vergangene Veranstaltungen bleiben als Rückblick sichtbar.</p>
+    </div>
+    <div class="event-grid">
+      <article class="event-card"><img class="media-contain" src="assets/images/beachsoccer.jpg" alt="Beachsoccer"><div><h3>⚽ Bickenbacher Beachsoccer-Tage</h3><p>25.–28.06.2026</p></div></article>
+      <article class="event-card"><img class="media-contain" src="assets/images/freibad-juze.png" alt="Schwimmbadausflug"><div><h3>🏊 Schwimmbad-Ausflug für Mädchen</h3><p>23.06.2026</p></div></article>
+      <article class="event-card"><img class="media-contain" src="assets/images/freibad-juni.jpg" alt="Schwimmabzeichentag"><div><h3>🏊 Schwimmabzeichentag</h3><p>17.06.2026</p></div></article>
+      <article class="event-card"><img class="media-contain" src="assets/images/e-jugend-training.jpg" alt="E-Jugend Training"><div><h3>⚽ Öffentliches E-Jugend-Training</h3><p>16.06.2026</p></div></article>
+    </div>
+  </div>
+</section>
 
-            <div style="background-color: white; border: 2px solid var(--primary-color); padding: 2rem; border-radius: 8px; margin-top: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
-                <p style="font-size: 0.95rem; margin: 0;">
-                    <strong>Kontaktieren Sie mich unter:</strong><br>
-                    sportcoach.bickenbach at mail.de
-                </p>
-            </div>
-        </div>
-    </section>
+<section class="section">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Einblicke</span>
+      <h2>Unsere Aktivitäten</h2>
+      <p>Fotos von gemeinsamen sportlichen Ausflügen und Aktionen.</p>
+    </div>
+    
+    <div class="activity-block">
+      <div class="activity-copy">
+        <span class="eyebrow">Sommerferien 2026</span>
+        <h3>🏊 DLRG-Schwimmkurs „Wasser für alle“</h3>
+        <p>Vier Kinder aus Bickenbach konnten an einem kostenlosen Kurs mit Wassergewöhnung und ersten Schwimmbewegungen teilnehmen.</p>
+      </div>
+      <div class="gallery gallery-single">
+        <img src="assets/images/95087.jpg" alt="DLRG Schwimmkurs">
+      </div>
+    </div>
 
-    <!-- Sportarten in Bickenbach (ERWACHSENE VERSION) -->
-    <section class="section sports-section">
-        <div class="container">
-            <h2>Sportarten in Bickenbach</h2>
-            <p class="section-subtitle">Übersicht aller Sportvereine und Angebote in der Gemeinde Bickenbach</p>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
-                <div class="sport-card">
-                    <h3>⚽ Fußball</h3>
-                    <a href="https://www.skgbickenbach.de/" target="_blank">SKG Bickenbach</a> | 
-                    <a href="https://instagram.com/skgbickenbach/" target="_blank">Instagram</a>
-                </div>
-                <div class="sport-card">
-                    <h3>🏀 Basketball</h3>
-                    <p>Weitere Informationen auf Anfrage</p>
-                </div>
-                <div class="sport-card">
-                    <h3>🏐 Volleyball</h3>
-                    <p>Weitere Informationen auf Anfrage</p>
-                </div>
-                <div class="sport-card">
-                    <h3>🎾 Tennis</h3>
-                    <p>Weitere Informationen auf Anfrage</p>
-                </div>
-                <div class="sport-card">
-                    <h3>🏓 Tischtennis</h3>
-                    <p>Weitere Informationen auf Anfrage</p>
-                </div>
-                <div class="sport-card">
-                    <h3>🥊 Kampfsport</h3>
-                    <p>Weitere Informationen auf Anfrage</p>
-                </div>
-                <div class="sport-card">
-                    <h3>🏃 Leichtathletik</h3>
-                    <p>Weitere Informationen auf Anfrage</p>
-                </div>
-                <div class="sport-card">
-                    <h3>🎯 Schützenverein</h3>
-                    <p>Weitere Informationen auf Anfrage</p>
-                </div>
-                <div class="sport-card">
-                    <h3>🥾 Wandern</h3>
-                    <p>Weitere Informationen auf Anfrage</p>
-                </div>
-                <div class="sport-card">
-                    <h3>💪 Jump & Pump</h3>
-                    <a href="https://bickenbach-bergstrasse.de/vereinsverzeichnis/..." target="_blank">Pumptrack Bickenbach</a> | 
-                    <a href="https://instagram.com/pumptrack_bickenbach/" target="_blank">Instagram</a>
-                </div>
-                <div class="sport-card">
-                    <h3>🥞 Boule</h3>
-                    <a href="https://partnerschaftsverein-bickenbach.de/veranstaltungen/index.php" target="_blank">Partnerschaftsverein Bickenbach</a>
-                </div>
-                <div class="sport-card">
-                    <h3>👥 Jedermannsport</h3>
-                    <a href="http://www.falken-bickenbach.de/viewpage.php?page_id=19" target="_blank">Die Falken Bickenbach</a>
-                </div>
-                <div class="sport-card">
-                    <h3>🤸 Kinderturnen</h3>
-                    <a href="https://www.bickenbach-bergstrasse.de/de/vereinsverzeichnis/vereine/SKG-Abt-Kinderturnen.php" target="_blank">SKG Bickenbach</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="activity-block">
+      <div class="activity-copy">
+        <span class="eyebrow">Gemeinsamer Ausflug</span>
+        <h3>⚽ Ukrainische Fußballnationalmannschaft</h3>
+        <p>Gemeinsamer Besuch eines öffentlichen Trainings in Wiesbaden.</p>
+      </div>
+      <div class="gallery gallery-single">
+        <img src="assets/images/ukraine-fuball-ausflug.jpg" alt="Ausflug zum öffentlichen Training der ukrainischen Fußballnationalmannschaft">
+      </div>
+    </div>
 
-    <!-- Eigene Angebote -->
-    <section id="angebote" class="section angebote-section">
-        <div class="container">
-            <h2>Eigene Angebote</h2>
-            <p class="section-subtitle">Zusätzliche Sportangebote von Sport-Coach Bickenbach</p>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem;">
-                <div class="image-gallery">
-                    <h3>⚽ Hallenfußball für Mädchen</h3>
-                    <p style="text-align: center;">Regelmäßige Trainingsangebote für Mädchen aller Altersgruppen</p>
-                </div>
-                <div class="image-gallery">
-                    <h3>💃 Kreistanz</h3>
-                    <p style="text-align: center;">Traditionelle Tanzformen in gemütlicher Atmosphäre</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="activity-block">
+      <div class="activity-copy">
+        <span class="eyebrow">Fußballturnier Reinheim</span>
+        <h3>⚽ Gemeinsam beim Turnier</h3>
+        <p>Ein Rückblick mit mehreren Bildern – ohne Ausschnitte, damit die Fotos vollständig sichtbar bleiben.</p>
+      </div>
+      <div class="gallery gallery-many">
+        <img src="assets/images/madchen-turnier-1.jpeg" alt="Fußballturnier Reinheim 1">
+        <img src="assets/images/madchen-turnier-2.jpeg" alt="Fußballturnier Reinheim 2">
+        <img src="assets/images/madchen-turnier-3.jpeg" alt="Fußballturnier Reinheim 3">
+        <img src="assets/images/madchen-turnier-4.jpeg" alt="Fußballturnier Reinheim 4">
+        <img src="assets/images/madchen-turnier-5.jpeg" alt="Fußballturnier Reinheim 5">
+        <img src="assets/images/madchen-turnier-5.jpg" alt="Fußballturnier Reinheim 6">
+      </div>
+    </div>
 
-    <!-- Sportliche Events (NUR BEI ERWACHSENEN) -->
-    <section id="events" class="section">
-        <div class="container">
-            <h2>Sportliche Events</h2>
-            <p class="section-subtitle">Kommende Veranstaltungen und Turniere</p>
-            
-            <div style="margin-top: 2rem;">
-                <div style="background-color: white; padding: 2rem; border-radius: 8px; margin-bottom: 2rem; border-left: 5px solid var(--primary-color);">
-                    <h3 style="margin-top: 0;">🏐 Beachsoccer 25.-28.06.2026</h3>
-                    <p>Ein großartiges Turnier am Strand! Alle sind willkommen.</p>
-                </div>
+    <div class="activity-block">
+      <div class="activity-copy">
+        <span class="eyebrow">Weitere Aktivitäten</span>
+        <h3>🎳 Bowling & ⛸️ Eislaufen</h3>
+      </div>
+      <div class="gallery gallery-many">
+        <img src="assets/images/bowling.jpeg" alt="Bowling in Bensheim">
+        <img src="assets/images/eissporthalle-1.jpeg" alt="Eissporthalle Darmstadt 1">
+        <img src="assets/images/eissporthalle-3.jpeg" alt="Eissporthalle Darmstadt 2">
+      </div>
+    </div>
+    
+  </div>
+</section>
 
-                <div style="background-color: white; padding: 2rem; border-radius: 8px; margin-bottom: 2rem; border-left: 5px solid var(--primary-color);">
-                    <h3 style="margin-top: 0;">⚽ Tag des Mädchenfußballs - 06.06.2026</h3>
-                    <p>Spiel und Spaß für Mädchen aller Altersgruppen</p>
-                </div>
+<section class="section soft" id="kontakt">
+  <div class="container narrow">
+    <div class="contact-box">
+      <div>
+        <span class="eyebrow">Kontakt</span>
+        <h2>Sie möchten mitmachen?</h2>
+        <p><a href="mailto:sportcoach.bickenbach@mail.de">sportcoach.bickenbach@mail.de</a></p>
+        <p>Über das Formular können Sie auch Interesse für Ihre Kinder eintragen. Kinder sollen das Formular nicht selbst ausfüllen.</p>
+      </div>
+      <a class="button primary" href="https://docs.google.com/forms/d/e/1FAIpQLScJoLOp_Y5Pggde_GepTLUedyqHPR2QHUjpT15fS-VurWF46A/viewform" target="_blank" rel="noopener">Formular öffnen</a>
+    </div>
+  </div>
+</section>
 
-                <div style="background-color: white; padding: 2rem; border-radius: 8px; margin-bottom: 2rem; border-left: 5px solid var(--primary-color);">
-                    <h3 style="margin-top: 0;">🎾 Tennis - 19.04.2026</h3>
-                    <p>Tennismeisterschaften und Freizeitturniere</p>
-                </div>
+</main>
 
-                <div style="background-color: white; padding: 2rem; border-radius: 8px; margin-bottom: 2rem; border-left: 5px solid var(--primary-color);">
-                    <h3 style="margin-top: 0;">💪 Cardio & Fitness</h3>
-                    <p>Kosten: Fördermitgliedschaft 24€, Zehnerkarte 40€</p>
-                </div>
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <strong>Sport-Coach Bickenbach</strong>
+      <span>Im Rahmen des Landesprogramms „Sport integriert Hessen“</span>
+    </div>
+    <div class="footer-links">
+      <a href="mailto:sportcoach.bickenbach@mail.de">E-Mail</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </div>
+  </div>
+</footer>
+<script>
+  const current = document.body.dataset.page;
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    if (a.dataset.page === current) a.classList.add('active');
+  });
+</script>
 
-                <div style="background-color: white; padding: 2rem; border-radius: 8px; margin-bottom: 2rem; border-left: 5px solid var(--primary-color);">
-                    <h3 style="margin-top: 0;">💃 Line Dance für Anfänger</h3>
-                    <p>Tanzkurs für Einsteiger – keine Vorkenntnisse notwendig</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Ausflüge -->
-    <section class="section" style="background-color: var(--light-bg);">
-        <div class="container">
-            <h2>Ausflüge</h2>
-            <p class="section-subtitle">Gemeinsame Aktivitäten und Ausflüge</p>
-            
-            <div class="image-gallery">
-                <h3>🏊 DLRG Schwimmkurs - Wasser für alle</h3>
-                <img src="95087.jpg" alt="DLRG Schwimmkurs" style="margin-bottom: 0.5rem;">
-                <p style="max-width: 800px; margin: 1rem auto; text-align: center; font-size: 0.95rem;">Das Angebot während der Sommerferien 2026 wurde durch den DLRG Bundesverband aus Spendengeldern der Aktion "Ein Herz für Kinder" gefördert und konzentrierte sich auf Wassergewöhnung und erste Schwimmbewegungen. Mit Unterstützung von Sport-Coach Stefan und Marion haben 4 Kinder aus Bickenbach am kostenlosen Kurs der DLRG teilgenommen.</p>
-            </div>
-
-            <div class="image-gallery">
-                <h3>🥾 Wanderung in Bensheim</h3>
-                <img src="Bensheim_Wanderung.jpeg" alt="Wanderung Bensheim" style="margin-bottom: 0.5rem;">
-            </div>
-
-            <div class="image-gallery">
-                <h3>🐴 Wanderausflug mit Pferden - Seeheim-Jugenheim</h3>
-                <img src="Pferde_Ausflug_Seeheim_Jugenheim.jpeg" alt="Pferdeausflug Seeheim-Jugenheim" style="margin-bottom: 0.5rem;">
-            </div>
-
-            <div class="image-gallery">
-                <h3>⛸️ Eissporthalle Darmstadt</h3>
-                <img src="https://static.wixstatic.com/media/72b7e8_9e2b57dff4f2439a804c0e1f17dd548f~mv2.jpeg/v1/crop/x_0,y_0,w_1658,h_941/fill/w_575,h_318,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Eissporthalle_3.jpeg" alt="Eissporthalle Darmstadt">
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- Kontakt -->
-    <section id="kontakt" class="section contact-section">
-        <div class="container">
-            <h2>Kontakt</h2>
-            <p class="section-subtitle">Nehmen Sie Kontakt mit uns auf</p>
-
-            <div style="background-color: white; border: 2px solid var(--primary-color); padding: 2rem; border-radius: 8px; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; text-align: center;">
-                <p style="font-size: 1rem; margin-bottom: 1rem;">
-                    <strong>📧 E-Mail:</strong><br>
-                    sportcoach.bickenbach at mail.de
-                </p>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfYourFormLink/viewform" target="_blank" style="display: inline-block; background-color: var(--primary-color); color: white; padding: 0.75rem 1.5rem; border-radius: 5px; text-decoration: none; font-weight: bold; margin-top: 1rem;">📝 Kontaktformular</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p><a href="impressum.html" style="color: white; text-decoration: none;">Impressum</a> | <a href="datenschutz.html" style="color: white; text-decoration: none;">Datenschutz</a></p>
-        </div>
-    </footer>
-    <script src="script.js"></script>
 </body>
 </html>
