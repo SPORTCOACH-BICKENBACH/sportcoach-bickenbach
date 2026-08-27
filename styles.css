@@ -268,3 +268,33 @@ a { color: var(--red); }
   .contact-box, .download-card, .footer-inner { flex-direction: column; align-items: flex-start; }
   .button { width: 100%; }
 }
+
+
+/* Refinements */
+.audience-grid { grid-template-columns: repeat(3, 1fr); }
+.sport-card { min-height: 145px; }
+.sport-card p { display: none; }
+.sport-links { display: flex; flex-direction: column; gap: 7px; }
+.sport-card .small-link { color: var(--muted); font-size: .86rem; }
+.recruitment-section { margin-top: 54px; padding-top: 42px; border-top: 1px solid var(--line); }
+.section-heading.compact h3 { margin: 0; font-size: 2rem; }
+.recruitment-gallery { display: grid; grid-template-columns: 1.3fr .7fr; gap: 18px; align-items: start; }
+.recruitment-gallery img { width: 100%; height: auto; max-height: 760px; object-fit: contain; background: #f3f4f5; border: 1px solid var(--line); border-radius: 16px; padding: 4px; }
+.event-list { display: flex; flex-direction: column; gap: 58px; }
+.event-large { max-width: 850px; margin: 0 auto; text-align: center; }
+.event-large h3 { font-size: 1.35rem; margin: 0 0 14px; }
+.event-large > img { width: 100%; height: auto; max-height: 1050px; object-fit: contain; background: white; border: 1px solid var(--line); border-radius: 16px; padding: 8px; }
+.event-large p { max-width: 760px; margin: 12px auto 0; color: var(--muted); }
+.past-events { margin-top: 64px; border-top: 1px solid var(--line); padding-top: 30px; }
+.past-events summary { cursor: pointer; display: inline-flex; padding: 12px 18px; border: 1px solid var(--line); border-radius: 12px; background: white; color: var(--ink); font-weight: 800; }
+.past-events-content { margin-top: 42px; }
+.past-events-content > h3 { text-align: center; margin-bottom: 34px; }
+.club-hero .hero-grid { grid-template-columns: 1fr; max-width: 900px; }
+.funding-card { border-top: 3px solid var(--ink); box-shadow: none; }
+.funding-card h3 { margin-top: 0; }
+.funding-icon { display: none; }
+@media (max-width: 760px) {
+  .audience-grid { grid-template-columns: 1fr; }
+  .recruitment-gallery { grid-template-columns: 1fr; }
+  .event-list { gap: 44px; }
+}
